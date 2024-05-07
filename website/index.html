@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <title>Travel Soul</title>
+
+
+
+</head>
+
+<body>
+  <header id="home">
+    <nav>
+      <div class="nav__bar">
+        <div class="nav__logo"><a href="#">Soul</a></div>
+        <ul class="nav__links">
+          <li class="link"><a href="#home">Home</a></li>
+          <li class="link"><a href="#about">About Us</a></li>
+          <li class="link"><a href="#discover">Discover</a></li>
+          <li class="link"><a href="#blog">Map</a></li>
+          <li class="link"><a href="#gallery">Gallery</a></li>
+
+        </ul>
+      </div>
+    </nav>
+    <div class="section__container header__container">
+      <h1>In search of the true self around the world</h1>
+      <h4>Explore the colourful world</h4>
+      <button type="button" onclick="location.href='http://localhost:3000 '" class="box">
+        <h3>Login</h3>
+      </button>
+
+
+    </div>
+  </header>
+
+
+
+  <section class="about" id="about">
+    <div class="section__container about__container">
+      <div class="about__content">
+        <h2 class="section__header">Colourful World</h2>
+        <p class="section__subheader">
+          World traveling is like embarking on a journey of the heart,
+          where every destination becomes a chapter in the story of one's soul.<br>
+          <br>
+          It's about more than just visiting landmarks or ticking off bucket
+          list items; it's about immersing oneself in the vibrant tapestry of cultures,
+          flavors, and landscapes that this planet offers.<br>
+          <br>
+          With each step taken on foreign soil, one discovers not only the beauty of distant lands but also
+          the interconnectedness of humanity.
+      </p>
+      
+
+
+      </div>
+      <div class="about__image">
+        <img src="assets/about.jpg" alt="about" />
+      </div>
+    </div>
+  </section>
+
+  <section class="discover" id="discover">
+    <div class="section__container discover__container">
+      <h2 class="section__header">Explore Best Places</h2>
+      <p class="section__subheader">
+        Embark on an soulful and adventurous journey with us.
+      </p>
+      <div class="discover__grid">
+        <div class="discover__card">
+          <div class="discover__image">
+            <img src="https://i.pinimg.com/474x/07/a5/34/07a534c65a5003b6f6aefbef696283e1.jpg" alt="discover" />
+          </div>
+          <div class="discover__card__content">
+            <h4>Singapore</h4>
+            <p>
+              In the city's heart, a garden blooms,
+              Singapore's skyline kisses the moon.
+
+              Where cultures blend, a vibrant tapestry,
+              In every corner, a story of history
+            </p>
+          </div>
+        </div>
+        <div class="discover__card">
+          <div class="discover__image">
+            <img src="https://i.pinimg.com/474x/8b/a1/e0/8ba1e06ee597c20c7d8975b4449c9646.jpg" alt="discover" />
+          </div>
+          <div class="discover__card__content">
+            <h4>India</h4>
+            <p>
+              India, a land of ancient grace,Where colors dance in every space.
+              From Himalayan peaks to oceans wide, A symphony of cultures, side by side
+            </p>
+
+          </div>
+        </div>
+        <div class="discover__card">
+          <div class="discover__image">
+            <img src="https://i.pinimg.com/474x/83/f1/73/83f173e68b5cc8a2c3c1dc619f6374cd.jpg" alt="discover" />
+          </div>
+          <div class="discover__card__content">
+            <h4>Paris</h4>
+            <p>
+              In Paris, where romance takes flight,Streets echo with love's delight.
+              The Seine whispers secrets old,In every cobblestone, stories untold
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="blogs" id="blog">
+    <div class="blogs__container">
+      <h2 class="section__header">Map</h2>
+      <p class="section__subheader">We want to help you travel better!</p>
+      <div class="blogs__grid">
+        <div class="blogs__card">
+          <img src="https://i.pinimg.com/474x/46/80/b2/4680b2d1a3c63ecf2da7ea66e19bdf50.jpg" alt="blog" />
+          <button id="mapButton">View Map</button>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="NewAgent"
+  agent-id="2cf48086-d530-477d-a5bc-a88c78fa323e"
+  language-code="en"
+  chat-icon="./assets/chatbot.jpg" 
+></df-messenger>
+
+
+  <section class="gallery" id="gallery">
+    <div class="gallery__container">
+      <h2 class="section__header">Gallery photos</h2>
+      <p class="section__subheader">
+        Explore the most beautiful places in the world.
+      </p>
+      <div class="gallery__grid">
+        <div class="gallery__card">
+          <img src="assets/gallery-1.jpg" alt="gallery" />
+          <div class="gallery__content">
+            <h4>Northern Lights</h4>
+            <p>Norway</p>
+          </div>
+        </div>
+        <div class="gallery__card">
+          <img src="assets/gallery-2.jpg" alt="gallery" />
+          <div class="gallery__content">
+            <h4>Krabi</h4>
+            <p>Thailand</p>
+          </div>
+        </div>
+        <div class="gallery__card">
+          <img src="assets/gallery-3.jpg" alt="gallery" />
+          <div class="gallery__content">
+            <h4>Bali</h4>
+            <p>Indonesia</p>
+          </div>
+        </div>
+        <div class="gallery__card">
+          <img src="assets/gallery-4.jpg" alt="gallery" />
+          <div class="gallery__content">
+            <h4>Tokyo</h4>
+            <p>Japan</p>
+          </div>
+        </div>
+        <div class="gallery__card">
+          <img src="assets/gallery-5.jpg" alt="gallery" />
+          <div class="gallery__content">
+            <h4>Taj Mahal</h4>
+            <p>India</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer" id="footer">
+    <div class="section__container footer__container">
+      <h4>Soul</h4>
+      <div class="footer__socials">
+        <span>
+          <a href="#"><i class="ri-facebook-fill"></i></a>
+        </span>
+        <span>
+          <a href="#"><i class="ri-instagram-fill"></i></a>
+        </span>
+        <span>
+          <a href="#"><i class="ri-twitter-fill"></i></a>
+        </span>
+        <span>
+          <a href="#"><i class="ri-linkedin-fill"></i></a>
+        </span>
+      </div>
+
+      <ul class="footer__nav">
+        <li class="link"><a href="#home">Home</a></li>
+        <li class="link"><a href="#about">About Us</a></li>
+        <li class="link"><a href="#discover">Discover</a></li>
+        <li class="link"><a href="#blog">Map</a></li>
+        <li class="link"><a href="#gallery">Gallery</a></li>
+
+      </ul>
+    </div>
+    <div class="footer__bar">
+      Copyright © 2024 Soul by Sahithi. All rights reserved.
+    </div>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

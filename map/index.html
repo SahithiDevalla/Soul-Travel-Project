@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+
+    <meta charset="utf-8">
+
+    <!-- Ensures that IE and Edge uses the latest version and doesn't emulate an older version -->
+    <meta http-equiv="x-ua-compatible" content="IE=Edge">
+
+    <!-- Ensures the web page looks good on all screen sizes. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Add references to the Azure Maps Map control JavaScript and CSS files. -->
+    <link rel="stylesheet" href="https://atlas.microsoft.com/sdk/javascript/mapcontrol/3/atlas.min.css" type="text/css">
+    <script src="https://atlas.microsoft.com/sdk/javascript/mapcontrol/3/atlas.min.js"></script>
+
+    <script type="text/javascript">
+        //Create an instance of the map control and set some options.
+        function InitMap() {
+            // Check if the Geolocation API is available
+            if (navigator.geolocation) {
+                // Get the user's current position
+                navigator.geolocation.getCurrentPosition(function (position) {
+                    // Create a map centered on the user's current position
+                    var map = new atlas.Map('myMap', {
+                        center: [position.coords.longitude, position.coords.latitude],
+                        zoom: 12,
+                        language: 'en-US',
+                        authOptions: {
+                            authType: 'subscriptionKey',
+                            subscriptionKey: '6f4wsCp_y5eP2dpSxoQ1AEBjGZNcOSvlwqFxPaTQFmE'
+                        }
+                    });
+                });
+            } else {
+                // Geolocation is not supported by the browser
+                alert("Geolocation is not supported by this browser.");
+            }
+        }
+    </script>
+
+    <style>
+        html,
+        body {
+            margin: 0;
+        }
+
+        #myMap {
+            height: 100vh;
+            width: 100vw;
+        }
+    </style>
+</head>
+
+<body onload="InitMap()">
+    <div id="myMap"></div>
+</body>
+
+</html>
