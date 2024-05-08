@@ -332,6 +332,7 @@ nav {
 	font-weight: 700;
 	background-image: url("assets/banner.jpg");
 	-webkit-background-clip: text;
+	background-clip: text;
 	-webkit-text-fill-color: transparent;
 	-webkit-text-stroke: 1px var(--extra-light);
 }
